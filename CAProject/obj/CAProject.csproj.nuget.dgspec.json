@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Yau\\Desktop\\MVCCA\\CAProject\\CAProject\\CAProject.csproj": {}
+    "C:\\Users\\User\\Source\\Repos\\hash456\\CAProject\\CAProject\\CAProject.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Yau\\Desktop\\MVCCA\\CAProject\\CAProject\\CAProject.csproj": {
+    "C:\\Users\\User\\Source\\Repos\\hash456\\CAProject\\CAProject\\CAProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Yau\\Desktop\\MVCCA\\CAProject\\CAProject\\CAProject.csproj",
+        "projectUniqueName": "C:\\Users\\User\\Source\\Repos\\hash456\\CAProject\\CAProject\\CAProject.csproj",
         "projectName": "CAProject",
-        "projectPath": "C:\\Users\\Yau\\Desktop\\MVCCA\\CAProject\\CAProject\\CAProject.csproj",
-        "packagesPath": "C:\\Users\\Yau\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Yau\\Desktop\\MVCCA\\CAProject\\CAProject\\obj\\",
+        "projectPath": "C:\\Users\\User\\Source\\Repos\\hash456\\CAProject\\CAProject\\CAProject.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\User\\Source\\Repos\\hash456\\CAProject\\CAProject\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Yau\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -49,6 +49,10 @@
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[3.1.8, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[3.1.4, )"
             }
           },
           "imports": [
