@@ -8,9 +8,26 @@ namespace CAProject.Controllers
 {
     public class SearchController : Controller
     {
+       
         public IActionResult Index()
         {
-            return View();
+
+           
+     
+           
+
+               //CAProject is Database name
+    var products = from p in CAProject.Product
+                 select p;
+
+    if (!String.IsNullOrEmpty(searchString))
+    {
+        products = products.Where(s => s.Name.Contains(searchStr));
+    }
+
+    return View("Home/View");
+
+            
         }
     }
 }
