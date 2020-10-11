@@ -49,17 +49,20 @@
                         <div style="float:right" id="nav-cart">
                             <a class="nav-link text-dark" asp-area="" asp-controller="ShoppingCart" asp-action="Index">
                                 <span class="cart-icon"></span>
+                                @*<span class="cart-num" id="cart_top_num" style="display:block;">
+                                @ViewData["CartCount"]
+                                </span>*@
                             </a>
                         </div>
                     }
                     else
                     {
-                        List<Cart> cart = (List<Cart>)ViewData["Cart"];
-                        int item_num = 0;
-                        foreach (Cart item in cart)
-                        {
-                            item_num += item.Quantity;
-                        }
+                    List<Cart> cart = (List<Cart>)ViewData["Cart"];
+                    int item_num = 0;
+                    foreach (Cart item in cart)
+                    {
+                        item_num += item.Quantity;
+                    }
                         <div style="float:right" id="nav-cart">
                             <a class="nav-link text-dark" asp-area="" asp-controller="ShoppingCart" asp-action="Index">
                                 <span class="cart-icon"></span>

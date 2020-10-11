@@ -14,7 +14,7 @@ function AddToCart(event) {
 function SendToCart(productId, quantity) {
     let xhr = new XMLHttpRequest();
 
-    xhr.open("POST", "/ShoppingCart/UpdateCart");
+    xhr.open("POST", "/Home/UpdateCart");
     xhr.setRequestHeader("Content-Type", "application/json; charset=utf8");
 
     xhr.onreadystatechange = function () {
@@ -25,7 +25,8 @@ function SendToCart(productId, quantity) {
 
                 if (this.status === 200 && data.status == "success") {
                     console.log("Successful operation: " + data.status);
-                    alert(data.message);
+                    //alert(data.message);
+                    location.reload();
                 }
                 else {
                     // Redirect user to login page if user not yet login

@@ -3,6 +3,7 @@
     PaginatedList<Product> paginatedList = (PaginatedList<Product>)ViewData["paginatedList"];
     var prevDisabled = !paginatedList.HasPreviousPage ? "disabled" : "";
     var nextDisabled = !paginatedList.HasNextPage ? "disabled" : "";
+    List<Cart> cart = (List<Cart>)ViewData["Cart"];
 
     Dictionary<int, int> paginatedStockCount = (Dictionary<int, int>)ViewData["paginatedStockCount"];
 }
