@@ -50,7 +50,7 @@ namespace CAProject.Controllers
 
             ViewData["paginatedStockCount"] = paginatedStockCount;
             ViewData["SessionId"] = HttpContext.Session.GetString("SessionId");
-
+            
             return View();
         }
 
