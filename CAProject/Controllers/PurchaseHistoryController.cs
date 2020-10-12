@@ -52,6 +52,7 @@ namespace CAProject.Controllers
             }
 
             ViewData["acLookup"] = acLookUp;
+            ViewData["Order"] = orders;
 
             return View();
         }
