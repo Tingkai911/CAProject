@@ -18,7 +18,7 @@
 {
 <div class="order-container">
     <div class="order-id">Order: @order.Id</div>
-    <div class="order-data">Placed on: @order.CheckOutDate</div>
+    <div class="order-date">Placed on: @order.CheckOutDate</div>
     <hr />
     @{
         double totalPrice = 0;
@@ -30,20 +30,20 @@
         totalPrice += subprice;
 
         <div class="order-item-container">
-            <table style="min-width: 800px; padding-top:15px">
+            <table style="min-width: 1000px">
                 <tr>
                     <td class="img-cell"><img src=@cart.Product.Image class="order-item-img" /></td>
                     <td class="des-cell">
-                        <p>@cart.Product.Name</p>
+                        @cart.Product.Name
                     </td>
-                    <td class="des-cell">
-                        Qty: @cart.Quantity
+                    <td class="qty-cell">
+                        <span class="tag">Qty:</span> @cart.Quantity
                     </td>
-                    <td class="des-cell">
-                        Price: SGD @subprice
+                    <td class="price-cell">
+                        <span>Price:</span> SGD @subprice
                     </td>
                     <td class="ac-cell">
-                        <span>Activation Codes:</span>
+                        Activation Codes:
                         <select id="acs">
                             @foreach (ActivationCode ac in acLookup[cart.Product])
                             {
@@ -58,7 +58,8 @@
             </table>
         </div>
     }
-    <div style="margin-bottom: 15px;" class="order-data">Total Price: @totalPrice</div>
+    <hr />
+    <div style="margin-bottom: 15px;" class="order-total-price"><span style="font-weight:bold">Total Price: </span>SGD @totalPrice</div>
 </div>
 }
 

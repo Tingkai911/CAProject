@@ -483,3 +483,5 @@ C:\Users\SakuraDemon\Desktop\CAProject\CAProject\obj\Debug\netcoreapp3.1\Razor\V
 C:\Users\Isabe\CAProject\CAProject\obj\Debug\netcoreapp3.1\Razor\Views\Checkout\Index.cshtml.g.cs
 C:\Users\SakuraDemon\Desktop\CAProject\CAProject\obj\Debug\netcoreapp3.1\Razor\Views\PurchaseHistory\Index.cshtml.g.cs
 C:\Users\SakuraDemon\Desktop\CAProject\CAProject\obj\Debug\netcoreapp3.1\CAProject.csprojAssemblyReference.cache
+F:\Studying Life\GDpiSA\Courses\SA4102\ASP.NET\CA Project\Repo\CAProject\obj\Debug\netcoreapp3.1\Razor\Views\Checkout\Index.cshtml.g.cs
+F:\Studying Life\GDpiSA\Courses\SA4102\ASP.NET\CA Project\Repo\CAProject\obj\Debug\netcoreapp3.1\Razor\Views\PurchaseHistory\Index.cshtml.g.cs

@@ -81,12 +81,13 @@ body {
     margin: -12px 0 0 -14px;
 }
 
-#nav-cart {
+.nav-cart {
     display: inline-block;
     height: 38px;
     width: 40px;
     position: relative;
     margin: 0 0 0 20px;
+    float:right;
 }
 
 .cart-num {
@@ -99,8 +100,21 @@ body {
     text-align: center;
     border: 3px solid #f36e36;
     font-size: 13px;
-    min-width: 14px;
+    width: 18px;
     line-height: 14px;
     border-radius: 50%;
     display: none;
 } 
+
+#search{
+    border-radius:50px;
+}
+
+#search-icon {
+    width: 35px;
+    height: 35px
+}
+
+input {
+    float:left;
+}

@@ -123,16 +123,18 @@
         <div class="product-item">
             <div>
                 <a href="@Url.Action("Index", "ProductPg", new { productid = product.Id })">
-                    <img src=@product.Image alt=@product.Name />
+                    <img src=@product.Image alt=@product.Name class="home_item_img"/>
                 </a>
             </div>
+            <div class="home_desc_container">
             <div>
                 <a href="@Url.Action("Index", "ProductPg", new { productid = product.Id })">
                     <h5>@product.Name</h5>
                 </a>
             </div>
-            <div>
+            <div class="product_desc">
                 <p>@product.Description</p>
+            </div>
             </div>
             <div>
                 @if (paginatedStockCount[product.Id] > 0)

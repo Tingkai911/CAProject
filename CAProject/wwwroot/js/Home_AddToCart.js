@@ -25,6 +25,7 @@ function SendToCart(productId, quantity) {
 
                 if (this.status === 200 && data.status == "success") {
                     console.log("Successful operation: " + data.status);
+                    if (data.message == "")
                     alert(data.message);
                     location.reload();
                 }
